@@ -191,7 +191,7 @@
 
       <div class="card">
         <div class="project-img">
-          <img src="/Users/marekpavlica/Desktop/ŠKOLA/web/portfolio/Screenshot 2026-02-23 at 10.06.10.png" alt="Projekt" onclick="openLightbox(this.src)" />
+          <img src="Screenshot 2026-02-23 at 10.06.10.png" alt="Projekt" onclick="openLightbox(this.src)" />
         </div>
         <div class="project-title">Webové stránky</div>
         <div class="project-desc">Funkční a moderní web pro firmu – design a vývoj.</div>
