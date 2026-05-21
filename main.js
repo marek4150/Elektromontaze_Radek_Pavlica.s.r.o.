@@ -25,7 +25,7 @@ controls.dampingFactor = 0.05;
 // 4. Načtení 3D modelu a jeho rozmístění
 const loader = new GLTFLoader();
 loader.load(
-  './kostka.glb', // Kostka umístěná vedle index.html
+  './model.glb', // Kostka umístěná vedle index.html
   function (gltf) {
     const baseCube = gltf.scene;
     
@@ -36,18 +36,6 @@ loader.load(
     const cube1 = baseCube;
     cube1.position.set(0, 0, 0); 
     scene.add(cube1);
-
-    // --- LEVÁ KOSTKA ---
-    const cube2 = baseCube.clone(); 
-    cube2.position.set(-80, 0, 0); // Výrazný posun doleva na ose X
-    scene.add(cube2);
-
-    // --- PRAVÁ KOSTKA ---
-    const cube3 = baseCube.clone(); 
-    cube3.position.set(80, 0, 0);  // Výrazný posun doprava na ose X
-    scene.add(cube3);
-
-    console.log("Všechny 3 kostky byly úspěšně načteny a rozmístěny!");
   },
   function (xhr) {
     console.log((xhr.loaded / xhr.total * 100) + '% loaded');
